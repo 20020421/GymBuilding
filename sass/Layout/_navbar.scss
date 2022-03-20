@@ -1,0 +1,42 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1.6rem;
+    position: absolute;
+    z-index: 9;
+}
+
+.navbar {
+    display: flex;
+    flex-grow: 1;
+}
+
+.navbar-nav {
+    display: flex;
+    padding: 2.4rem;
+    &_link {
+        
+        letter-spacing: .1rem;
+        color: $light;
+        font-weight: 700; 
+        &:hover, .active {
+            color: $primary;
+            font-weight: 300;
+
+        }
+    }
+
+    &_item {
+        padding: .8rem 1.5rem;
+    }
+}
+
+.dropdown-item {
+    padding: .2rem 2.4rem;
+    margin-bottom: 0.2rem;
+    display: block;
+    &:hover {
+        background-color: rgba($color: #00000007, $alpha: .06);
+    }
+}
+

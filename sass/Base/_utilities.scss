@@ -1,0 +1,124 @@
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-red {
+    color: $primary !important;
+}
+
+.text-black {
+    color: $secondary;
+}
+
+.bg-white {
+    background-color: $light;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-primary {
+    font-weight: 500 !important;
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+
+.bg-secondary {
+    background-color: $secondary !important;
+}
+
+.active {
+    color: $primary !important;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.align-items-end {
+    align-items: flex-end !important;
+}
+
+.justify-content-center {
+    justify-content: center !important;
+}
+
+.dropdown {
+    position: relative !important;
+    border-radius: 5px;
+    border: 1px solid $secondary;
+}
+
+.dropdown-menu {
+    position: absolute;
+    width: 160%;
+    top: 100%;
+    background-color: $light;
+    padding: .8rem 0rem;
+    margin-top: 0.2rem;
+    left: 0;
+    border: 1px solid $secondary;
+    display: none;
+}
+
+.dropdown:hover{
+    border: 1px solid $light!important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.bg-red {
+    background-color: $primary;
+}
+
+.bg-black {
+    background-color: $secondary;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.align-items-start {
+    align-items: flex-start;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+
+h1 {
+    font-size: 5.6rem;
+    line-height: 1.5;
+}

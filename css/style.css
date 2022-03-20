@@ -1,0 +1,221 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+body {
+  background-color: #ffffff;
+  margin-bottom: 10rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald,sans-serif;
+  padding: 2rem; }
+
+.font-weight-bold {
+  font-weight: 700 !important; }
+
+.text-white {
+  color: white !important; }
+
+.text-red {
+  color: #E31C25 !important; }
+
+.text-black {
+  color: #111111; }
+
+.bg-white {
+  background-color: #ffffff; }
+
+.text-uppercase {
+  text-transform: uppercase !important; }
+
+.text-primary {
+  font-weight: 500 !important; }
+
+.ml-auto {
+  margin-left: auto !important; }
+
+.mr-auto {
+  margin-right: auto !important; }
+
+.bg-secondary {
+  background-color: #111111 !important; }
+
+.active {
+  color: #E31C25 !important; }
+
+.w100 {
+  width: 100% !important; }
+
+.d-flex {
+  display: flex !important; }
+
+.flex-column {
+  flex-direction: column !important; }
+
+.align-items-center {
+  align-items: center !important; }
+
+.align-items-end {
+  align-items: flex-end !important; }
+
+.justify-content-center {
+  justify-content: center !important; }
+
+.dropdown {
+  position: relative !important;
+  border-radius: 5px;
+  border: 1px solid #111111; }
+
+.dropdown-menu {
+  position: absolute;
+  width: 160%;
+  top: 100%;
+  background-color: #ffffff;
+  padding: .8rem 0rem;
+  margin-top: 0.2rem;
+  left: 0;
+  border: 1px solid #111111;
+  display: none; }
+
+.dropdown:hover {
+  border: 1px solid #ffffff !important; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.bg-red {
+  background-color: #E31C25; }
+
+.bg-black {
+  background-color: #111111; }
+
+.text-align-right {
+  text-align: right; }
+
+.text-align-left {
+  text-align: left; }
+
+.align-items-start {
+  align-items: flex-start; }
+
+.p-0 {
+  padding: 0 !important; }
+
+h1 {
+  font-size: 5.6rem;
+  line-height: 1.5; }
+
+body {
+  font-size: 1.6rem;
+  font-family: Montserrat,sans-serif;
+  line-height: 1.6; }
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem;
+  position: absolute;
+  z-index: 9; }
+
+.navbar {
+  display: flex;
+  flex-grow: 1; }
+
+.navbar-nav {
+  display: flex;
+  padding: 2.4rem; }
+  .navbar-nav_link {
+    letter-spacing: .1rem;
+    color: #ffffff;
+    font-weight: 700; }
+    .navbar-nav_link:hover, .navbar-nav_link .active {
+      color: #E31C25;
+      font-weight: 300; }
+  .navbar-nav_item {
+    padding: .8rem 1.5rem; }
+
+.dropdown-item {
+  padding: .2rem 2.4rem;
+  margin-bottom: 0.2rem;
+  display: block; }
+  .dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.06); }
+
+.header-caption {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 1rem; }
+  .header-caption h3 {
+    font-size: 2.8rem; }
+  .header-caption h2 {
+    font-size: 8.8rem; }
+  .header-caption .btn {
+    font-size: 2rem;
+    margin-top: 3rem; }
+
+.container-header {
+  width: 100%;
+  position: relative; }
+
+.btn-transparent {
+  background-color: transparent; }
+
+.btn-outline {
+  color: #ffffff;
+  border-color: #ffffff; }
+  .btn-outline:hover {
+    background-color: #ffffff;
+    color: #111111; }
+
+.btn {
+  padding: 1.6rem 4.8rem;
+  border-width: 2px;
+  border-style: solid;
+  transition: all ease-in-out .15s; }
+
+.gym-class-box {
+  width: 50% !important;
+  padding: 3rem;
+  min-height: 46rem;
+  z-index: 1;
+  margin-top: -9rem;
+  position: relative; }
+  .gym-class-box i {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -6.1rem;
+    color: rgba(255, 255, 255, 0.1); }
+    .gym-class-box i::before {
+      font-size: 20rem !important; }
+  .gym-class-box.align-items-start i {
+    right: 0; }
+  .gym-class-box.align-items-end i {
+    left: 0; }
+
+.container-gymclass {
+  z-index: 9999999;
+  width: 70%;
+  margin: auto; }
+
+p {
+  margin-bottom: 5rem; }
+
+.gym-class-name {
+  font-size: 5.6rem; }

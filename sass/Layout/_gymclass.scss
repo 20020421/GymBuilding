@@ -1,0 +1,43 @@
+.gym-class-box {
+    width: 50% !important;
+    padding: 3rem;
+    min-height: 46rem;
+    z-index: 1;
+    margin-top: -9rem;
+    position: relative;
+    & i {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: -6.1rem;
+        color: rgba($color: #ffffff, $alpha: .1);
+        &::before {
+            font-size: 20rem !important;
+        }
+    }
+
+    &.align-items-start i {
+        right: 0;
+    }
+
+    &.align-items-end i {
+        left: 0;
+    }
+}
+
+.container-gymclass {
+    z-index: 9999999;
+    width: 70%;
+    margin: auto;
+}
+
+
+
+p {
+    margin-bottom: 5rem;
+}
+
+.gym-class-name {
+    font-size: 5.6rem;
+}
+
+
