@@ -5,6 +5,7 @@
     z-index: 1;
     margin-top: -9rem;
     position: relative;
+    padding: 5rem;
     & i {
         position: absolute;
         bottom: 0;
@@ -22,19 +23,20 @@
     &.align-items-end i {
         left: 0;
     }
+    & p {
+        margin-bottom: 5rem;
+    }
 }
 
 .container-gymclass {
     z-index: 9999999;
-    width: 70%;
+    width: 74%;
     margin: auto;
 }
 
 
 
-p {
-    margin-bottom: 5rem;
-}
+
 
 .gym-class-name {
     font-size: 5.6rem;

@@ -1,7 +1,7 @@
 .btn-transparent {
     background-color: transparent;
 }
-.btn-outline {
+.btn-outline-light {
     color: $light;
     border-color: $light;
     &:hover {
@@ -10,9 +10,23 @@
     }
 }
 
+.btn-outline-red {
+    color: $primary;
+    border-color: $primary;
+    &:hover {
+        background-color: $primary;
+        color: $light;
+    }
+}
+
 .btn {
     padding: 1.6rem 4.8rem;
     border-width: 2px;
     border-style: solid;
     transition: all ease-in-out .15s;
+    font-size: 2rem;
+}
+
+.btn-p-2 {
+    padding: .8rem 2.4rem;
 }

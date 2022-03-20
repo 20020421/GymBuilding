@@ -17,11 +17,11 @@ li {
 
 body {
   background-color: #ffffff;
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  color: #666; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Oswald,sans-serif;
-  padding: 2rem; }
+  font-family: Oswald,sans-serif; }
 
 .font-weight-bold {
   font-weight: 700 !important; }
@@ -114,6 +114,15 @@ h1, h2, h3, h4, h5, h6 {
 .p-0 {
   padding: 0 !important; }
 
+.w-50 {
+  width: 50% !important; }
+
+.p-4 {
+  padding: 1.5rem !important; }
+
+.size-56 {
+  font-size: 5.6rem; }
+
 h1 {
   font-size: 5.6rem;
   line-height: 1.5; }
@@ -177,18 +186,29 @@ body {
 .btn-transparent {
   background-color: transparent; }
 
-.btn-outline {
+.btn-outline-light {
   color: #ffffff;
   border-color: #ffffff; }
-  .btn-outline:hover {
+  .btn-outline-light:hover {
     background-color: #ffffff;
     color: #111111; }
+
+.btn-outline-red {
+  color: #E31C25;
+  border-color: #E31C25; }
+  .btn-outline-red:hover {
+    background-color: #E31C25;
+    color: #ffffff; }
 
 .btn {
   padding: 1.6rem 4.8rem;
   border-width: 2px;
   border-style: solid;
-  transition: all ease-in-out .15s; }
+  transition: all ease-in-out .15s;
+  font-size: 2rem; }
+
+.btn-p-2 {
+  padding: .8rem 2.4rem; }
 
 .gym-class-box {
   width: 50% !important;
@@ -196,7 +216,8 @@ body {
   min-height: 46rem;
   z-index: 1;
   margin-top: -9rem;
-  position: relative; }
+  position: relative;
+  padding: 5rem; }
   .gym-class-box i {
     position: absolute;
     bottom: 0;
@@ -208,14 +229,27 @@ body {
     right: 0; }
   .gym-class-box.align-items-end i {
     left: 0; }
+  .gym-class-box p {
+    margin-bottom: 5rem; }
 
 .container-gymclass {
   z-index: 9999999;
-  width: 70%;
+  width: 74%;
   margin: auto; }
-
-p {
-  margin-bottom: 5rem; }
 
 .gym-class-name {
   font-size: 5.6rem; }
+
+.gym-about {
+  width: 77%;
+  margin: auto;
+  padding: 1%;
+  margin-top: 7rem; }
+  .gym-about h2 {
+    color: #343a40 !important; }
+  .gym-about i::before {
+    font-size: 9rem !important; }
+  .gym-about .btn {
+    margin-top: 2rem; }
+  .gym-about h3 {
+    font-size: 2.4rem; }

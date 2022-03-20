@@ -1,0 +1,25 @@
+.gym-about {
+    width: 77%;
+    margin: auto;
+    padding: 1%;
+    margin-top: 7rem;
+    
+    & h2 {
+        color: #343a40 !important;
+    }
+
+    & i {
+        &::before {
+            font-size: 9rem !important;
+        }
+    }
+    
+    & .btn {
+        margin-top: 2rem;
+    }
+
+    & h3 {
+        font-size: 2.4rem;
+    }
+}
+
