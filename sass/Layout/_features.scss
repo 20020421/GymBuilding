@@ -1,0 +1,11 @@
+.container-features {
+    & h2 {
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+    }
+    & i {
+        &::before{
+            font-size: 7rem !important;
+        }
+    }
+}
