@@ -1,0 +1,47 @@
+.container-subscribe {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../img/bg.jpg);
+    width: 100%;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 4.8rem 0rem;
+
+    & input {
+        font-size: 2rem;
+        font-weight: 300;
+        font-family: inherit;
+        padding: 1rem 1.5rem;
+        margin-right: -4px;
+        border-color: transparent;
+        border-width: 1px ;
+    }
+
+    .input-group {
+        overflow: hidden;
+        margin-bottom: 4.8rem;
+    }
+
+    .btn {
+        padding: 2rem 1rem; 
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 5.6rem;
+        margin: 4.8rem 0 1.6rem 0;
+    }
+
+    p {
+        font-size: 1.6rem;
+        margin-bottom: 2.4rem;
+        font-weight: 300;
+    }
+}
+
+input[type="email"]:focus {
+    border: 1px solid rgba(243, 232, 232, 0.267) !important;
+    border-radius: 0 !important;
+    outline: none;
+}

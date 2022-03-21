@@ -38,9 +38,6 @@
     background-color: $secondary !important;
 }
 
-.active {
-    color: $primary !important;
-}
 
 .w100 {
     width: 100% !important;
@@ -142,6 +139,37 @@
     padding-left: 4.8rem;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.pos-rela {
+    position: relative;
+}
+
+.mb-5 {
+    margin-bottom: 2.5rem !important;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #dee2e6;
+}
 
 h1 {
     font-size: 5.6rem;

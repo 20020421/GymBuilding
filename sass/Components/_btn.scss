@@ -30,3 +30,14 @@
 .btn-p-2 {
     padding: .8rem 2.4rem;
 }
+
+.btn-all-red {
+    background-color: $primary;
+    color: $light;
+    border-color: $primary ;
+
+    &:hover {
+        background-color: #a81c23;
+        border-color: #a81c23 ;
+    }
+}

@@ -18,11 +18,13 @@ li {
 body {
   background-color: #ffffff;
   margin-bottom: 10rem;
-  color: #666; }
+  color: #666;
+  line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Oswald,sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+  color: #343a40; }
 
 .font-weight-bold {
   font-weight: 700 !important; }
@@ -53,9 +55,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg-secondary {
   background-color: #111111 !important; }
-
-.active {
-  color: #E31C25 !important; }
 
 .w100 {
   width: 100% !important; }
@@ -134,6 +133,30 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 4.8rem;
   padding-left: 4.8rem; }
 
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.pos-rela {
+  position: relative; }
+
+.mb-5 {
+  margin-bottom: 2.5rem !important; }
+
+.text-center {
+  text-align: center; }
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+
+.table {
+  border-collapse: collapse;
+  width: 100%; }
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid #dee2e6; }
+
 h1 {
   font-size: 5.6rem;
   line-height: 1.5; }
@@ -161,7 +184,7 @@ body {
     letter-spacing: .1rem;
     color: #ffffff;
     font-weight: 700; }
-    .navbar-nav_link:hover, .navbar-nav_link .active {
+    .navbar-nav_link:hover {
       color: #E31C25;
       font-weight: 300; }
   .navbar-nav_item {
@@ -173,6 +196,10 @@ body {
   display: block; }
   .dropdown-item:hover {
     background-color: rgba(0, 0, 0, 0.06); }
+
+a.navbar-nav_link.navbar-nav_item.active {
+  color: #E31C25;
+  font-weight: 300 !important; }
 
 .header-caption {
   position: absolute;
@@ -221,6 +248,14 @@ body {
 .btn-p-2 {
   padding: .8rem 2.4rem; }
 
+.btn-all-red {
+  background-color: #E31C25;
+  color: #ffffff;
+  border-color: #E31C25; }
+  .btn-all-red:hover {
+    background-color: #a81c23;
+    border-color: #a81c23; }
+
 .gym-class-box {
   width: 50% !important;
   padding: 3rem;
@@ -265,9 +300,108 @@ body {
   .gym-about h3 {
     font-size: 2.4rem; }
 
-.container-features h2 {
-  font-size: 3.2rem;
-  margin-bottom: 1rem; }
+.container-features {
+  margin-top: 5rem; }
+  .container-features h2 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem; }
+  .container-features i::before {
+    font-size: 7rem !important; }
 
-.container-features i::before {
-  font-size: 7rem !important; }
+.container-gym-infor {
+  width: 75%;
+  margin: auto;
+  margin-top: 9rem; }
+  .container-gym-infor img {
+    padding: 1.5rem; }
+  .container-gym-infor .features-content {
+    padding: 1.5rem;
+    max-width: 59%; }
+  .container-gym-infor i {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    color: #ffffff;
+    right: 0; }
+    .container-gym-infor i::before {
+      font-size: 3.3rem !important; }
+  .container-gym-infor h4 {
+    font-size: 2.4rem;
+    margin-bottom: .8rem;
+    line-height: 1.2; }
+  .container-gym-infor h2 {
+    font-size: 5.6rem;
+    line-height: 1.2; }
+
+.w-207 {
+  max-width: 41.009%;
+  height: auto; }
+
+.container-subscribe {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg.jpg);
+  width: 100%;
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 4.8rem 0rem; }
+  .container-subscribe input {
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: inherit;
+    padding: 1rem 1.5rem;
+    margin-right: -4px;
+    border-color: transparent;
+    border-width: 1px; }
+  .container-subscribe .input-group {
+    overflow: hidden;
+    margin-bottom: 4.8rem; }
+  .container-subscribe .btn {
+    padding: 2rem 1rem;
+    font-size: 1.6rem; }
+  .container-subscribe h2 {
+    font-size: 5.6rem;
+    margin: 4.8rem 0 1.6rem 0; }
+  .container-subscribe p {
+    font-size: 1.6rem;
+    margin-bottom: 2.4rem;
+    font-weight: 300; }
+
+input[type="email"]:focus {
+  border: 1px solid rgba(243, 232, 232, 0.267) !important;
+  border-radius: 0 !important;
+  outline: none; }
+
+.container-classtime-table {
+  margin: auto;
+  max-width: 120rem;
+  padding: 1rem 3rem; }
+  .container-classtime-table .nav-link {
+    font-size: 1.6rem;
+    padding: .8rem 1.6rem;
+    line-height: 1.5;
+    color: #E31C25; }
+    .container-classtime-table .nav-link.active {
+      background-color: #E31C25;
+      color: #ffffff !important; }
+  .container-classtime-table h4 {
+    font-size: 2.4rem; }
+  .container-classtime-table h2 {
+    margin-bottom: 5rem; }
+  .container-classtime-table table {
+    font-size: 1.6rem; }
+  .container-classtime-table h5 {
+    font-size: 2rem; }
+  .container-classtime-table td, .container-classtime-table th {
+    padding: 1.2rem; }
+
+.table-content > .tab-hide {
+  display: none; }
+
+.table-content > .active {
+  display: block; }

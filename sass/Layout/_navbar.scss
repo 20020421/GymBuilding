@@ -19,12 +19,14 @@
         letter-spacing: .1rem;
         color: $light;
         font-weight: 700; 
-        &:hover, .active {
+        &:hover{
             color: $primary;
             font-weight: 300;
 
         }
+    
     }
+
 
     &_item {
         padding: .8rem 1.5rem;
@@ -38,5 +40,9 @@
     &:hover {
         background-color: rgba($color: #00000007, $alpha: .06);
     }
+}
+a.navbar-nav_link.navbar-nav_item.active {
+    color: $primary ;
+    font-weight: 300 !important;
 }
 
