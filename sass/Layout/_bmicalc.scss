@@ -1,0 +1,77 @@
+.container-bmi-calculator {
+    padding: 0 1.5rem;
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    margin-top: 6rem;
+
+    & .bmi {
+        max-width: 114rem;
+        margin: auto;
+    }
+
+    & .bmi-calc {
+        padding: 4rem 5px;
+    }
+
+    & h4 {
+        font-size: 2.4rem;
+    }
+
+    & h3 {
+        font-size: 3.6rem;
+        margin-bottom: 1.6rem;
+    }
+
+    & h2 {
+        margin-bottom: 1.7rem;
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 50%;
+        height: 100%;
+        z-index: -1;
+        background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../img/carousel-1.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+
+    & input, & select {
+        height: 110%;
+        font-size: 1.6rem;
+        padding: .8rem 1.6rem;
+        font-family: inherit;
+        line-height: 2;
+        color: $light;
+        letter-spacing: 1px;
+        // outline: none;
+        border: 2px solid $light;
+        transition: all .3s ease;
+        outline: transparent;
+    }
+
+    & select {
+        color: #6c757d!important;
+    }
+
+    & input[type="text"]:focus, & select:focus {
+        border: 2px solid $primary;
+        outline: 1px solid ;
+    }
+
+    & input[type="button"] {
+        width: 100%;
+        font-size: 1.8rem;
+        cursor: pointer !important;
+    }
+    & input[type="button"]:active {
+        background-color: $secondary !important;
+
+    }
+
+}

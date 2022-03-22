@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 1.6rem;
   margin-bottom: 3rem; }
 
 .table {
@@ -156,6 +156,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .table-bordered th, .table-bordered td {
   border: 1px solid #dee2e6; }
+
+.py-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.col-2 {
+  padding: 0 1.5rem; }
+
+.pr-1 {
+  padding-right: 1rem; }
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -5px;
+  margin-left: -5px;
+  width: 100%;
+  margin-bottom: 1rem; }
+
+.form-group {
+  margin-bottom: 1rem; }
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding: 0 5px; }
+
+.bg-dark {
+  background-color: #343a40 !important; }
+
+.form-control {
+  width: 100%; }
+
+.form-control-lg {
+  height: calc(1.5em + 1rem + 2px);
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5; }
 
 h1 {
   font-size: 5.6rem;
@@ -243,7 +286,8 @@ a.navbar-nav_link.navbar-nav_item.active {
   border-width: 2px;
   border-style: solid;
   transition: all ease-in-out .15s;
-  font-size: 2rem; }
+  font-size: 2rem;
+  cursor: pointer !important; }
 
 .btn-p-2 {
   padding: .8rem 2.4rem; }
@@ -380,7 +424,8 @@ input[type="email"]:focus {
 .container-classtime-table {
   margin: auto;
   max-width: 120rem;
-  padding: 1rem 3rem; }
+  padding: 1rem 3rem;
+  height: auto; }
   .container-classtime-table .nav-link {
     font-size: 1.6rem;
     padding: .8rem 1.6rem;
@@ -400,8 +445,67 @@ input[type="email"]:focus {
   .container-classtime-table td, .container-classtime-table th {
     padding: 1.2rem; }
 
+.table-content {
+  position: relative;
+  min-height: 40rem; }
+
 .table-content > .tab-hide {
-  display: none; }
+  position: absolute;
+  opacity: 0; }
 
 .table-content > .active {
-  display: block; }
+  opacity: 1;
+  transition: opacity .8s ease; }
+
+.container-bmi-calculator {
+  padding: 0 1.5rem;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  margin-top: 6rem; }
+  .container-bmi-calculator .bmi {
+    max-width: 114rem;
+    margin: auto; }
+  .container-bmi-calculator .bmi-calc {
+    padding: 4rem 5px; }
+  .container-bmi-calculator h4 {
+    font-size: 2.4rem; }
+  .container-bmi-calculator h3 {
+    font-size: 3.6rem;
+    margin-bottom: 1.6rem; }
+  .container-bmi-calculator h2 {
+    margin-bottom: 1.7rem; }
+  .container-bmi-calculator::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-1.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover; }
+  .container-bmi-calculator input, .container-bmi-calculator select {
+    height: 110%;
+    font-size: 1.6rem;
+    padding: .8rem 1.6rem;
+    font-family: inherit;
+    line-height: 2;
+    color: #ffffff;
+    letter-spacing: 1px;
+    border: 2px solid #ffffff;
+    transition: all .3s ease;
+    outline: transparent; }
+  .container-bmi-calculator select {
+    color: #6c757d !important; }
+  .container-bmi-calculator input[type="text"]:focus, .container-bmi-calculator select:focus {
+    border: 2px solid #E31C25;
+    outline: 1px solid; }
+  .container-bmi-calculator input[type="button"] {
+    width: 100%;
+    font-size: 1.8rem;
+    cursor: pointer !important; }
+  .container-bmi-calculator input[type="button"]:active {
+    background-color: #111111 !important; }

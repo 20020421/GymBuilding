@@ -158,7 +158,7 @@
 
 .nav {
     display: flex;
-    gap: 2rem;
+    gap: 1.6rem;
     margin-bottom: 3rem;
 }
 
@@ -170,6 +170,59 @@
 .table-bordered th, .table-bordered td {
     border: 1px solid #dee2e6;
 }
+
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.px-3 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.col-2 {
+    padding: 0 1.5rem;
+}
+
+.pr-1 {
+    padding-right: 1rem;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem ;
+}
+
+.col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    padding: 0 5px;
+}
+.bg-dark {
+background-color: #343a40!important;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.form-control-lg {
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
 
 h1 {
     font-size: 5.6rem;

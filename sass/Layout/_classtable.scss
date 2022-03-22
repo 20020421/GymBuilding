@@ -2,6 +2,7 @@
     margin: auto;
     max-width: 120rem;
     padding: 1rem 3rem;
+    height: auto;
     & .nav-link {
         font-size: 1.6rem;
         padding: .8rem 1.6rem;
@@ -36,10 +37,16 @@
 
 }
 
+.table-content {
+    position: relative;
+    min-height: 40rem;
+}
 .table-content>.tab-hide {
-    display: none;
+    position: absolute;
+    opacity: 0;
 }
 
 .table-content>.active {
-    display: block;
+    opacity: 1;
+    transition: opacity .8s ease;
 }
