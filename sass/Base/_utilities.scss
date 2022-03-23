@@ -189,6 +189,10 @@
     padding-right: 1rem;
 }
 
+.pl-1 {
+    padding-left: 1rem;
+}
+
 .form-row {
     display: flex;
     flex-wrap: wrap;
@@ -221,6 +225,17 @@ background-color: #343a40!important;
     padding: .5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:  -15px;
+    margin-left: -15px;
+}
+
+.nowrap {
+    flex-wrap: nowrap !important;
 }
 
 

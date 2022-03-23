@@ -1,0 +1,97 @@
+.container-gym-team {
+    width: 100%;
+    margin: 4rem 0;
+    padding: 4rem;
+
+    & h4 {
+        font-size: 2.4rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.2 !important;
+    }
+
+    & h2 {
+        line-height: 1.2 ;
+        margin-bottom: 3rem;
+    }
+
+}
+
+.gym-team {
+    width: 114rem;
+    margin: auto;
+}
+
+.trainer {
+    margin: 0 !important;
+}
+
+.trainer-box {
+    position: relative;
+    padding:0rem 1.5rem;
+    width: calc(100%/4) ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    & a {
+        width: 40px;
+        height: 40px;
+        padding:2px 0px !important;
+        margin: .5rem;
+    }
+
+    & i {
+        font-size: 2rem;
+    }
+}
+
+.trainer-box:hover .card-social{
+    opacity: 1;
+    top: 50%;
+    transform: translateY(-150%);
+}
+
+.trainer-box:hover.trainer-box::after {
+    top: 0;
+    opacity: 1;
+    height: 100%;
+}
+
+.trainer-box::after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
+    top: 100%;
+    // padding: inherit;
+    width: calc(100% - 2 * 1.5rem) ;
+    opacity: 0;
+    transition: all .3s ease;
+    z-index: 7;
+}
+
+.card-text {
+    color: white !important;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-infor {
+    padding: 2rem;
+    z-index: 9;
+}
+
+.card-social {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    z-index: 8;
+    transition: all .4s ease;
+}
+

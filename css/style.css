@@ -171,6 +171,9 @@ h1, h2, h3, h4, h5, h6 {
 .pr-1 {
   padding-right: 1rem; }
 
+.pl-1 {
+  padding-left: 1rem; }
+
 .form-row {
   display: flex;
   flex-wrap: wrap;
@@ -199,6 +202,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: .5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.nowrap {
+  flex-wrap: nowrap !important; }
 
 h1 {
   font-size: 5.6rem;
@@ -299,6 +311,9 @@ a.navbar-nav_link.navbar-nav_item.active {
   .btn-all-red:hover {
     background-color: #a81c23;
     border-color: #a81c23; }
+
+.btn-circle {
+  border-radius: 50%; }
 
 .gym-class-box {
   width: 50% !important;
@@ -461,10 +476,10 @@ input[type="email"]:focus {
   padding: 0 1.5rem;
   position: relative;
   width: 100%;
-  min-height: 100%;
-  margin-top: 6rem; }
+  min-height: 45rem;
+  margin: 6rem 0rem; }
   .container-bmi-calculator .bmi {
-    max-width: 114rem;
+    max-width: 111.5rem;
     margin: auto; }
   .container-bmi-calculator .bmi-calc {
     padding: 4rem 5px; }
@@ -509,3 +524,184 @@ input[type="email"]:focus {
     cursor: pointer !important; }
   .container-bmi-calculator input[type="button"]:active {
     background-color: #111111 !important; }
+
+.container-gym-team {
+  width: 100%;
+  margin: 4rem 0;
+  padding: 4rem; }
+  .container-gym-team h4 {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.2 !important; }
+  .container-gym-team h2 {
+    line-height: 1.2;
+    margin-bottom: 3rem; }
+
+.gym-team {
+  width: 114rem;
+  margin: auto; }
+
+.trainer {
+  margin: 0 !important; }
+
+.trainer-box {
+  position: relative;
+  padding: 0rem 1.5rem;
+  width: calc(100%/4);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+  .trainer-box a {
+    width: 40px;
+    height: 40px;
+    padding: 2px 0px !important;
+    margin: .5rem; }
+  .trainer-box i {
+    font-size: 2rem; }
+
+.trainer-box:hover .card-social {
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-150%); }
+
+.trainer-box:hover.trainer-box::after {
+  top: 0;
+  opacity: 1;
+  height: 100%; }
+
+.trainer-box::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  top: 100%;
+  width: calc(100% - 2 * 1.5rem);
+  opacity: 0;
+  transition: all .3s ease;
+  z-index: 7; }
+
+.card-text {
+  color: white !important; }
+
+.card-img-top {
+  width: 100%; }
+
+.card-infor {
+  padding: 2rem;
+  z-index: 9; }
+
+.card-social {
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  z-index: 8;
+  transition: all .4s ease; }
+
+.container-testimonial {
+  width: 100%;
+  position: relative; }
+  .container-testimonial h4 {
+    font-size: 2.4rem; }
+  .container-testimonial span {
+    color: #ffffff; }
+  .container-testimonial::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg);
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    z-index: -1; }
+
+.client-comment {
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%; }
+
+.client-testimonial {
+  min-height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  padding: 0 3rem !important; }
+
+.slider-inner {
+  display: flex;
+  transition: all .5s ease; }
+
+.testimonial {
+  width: 114rem;
+  margin: auto;
+  padding: 0 1.5rem; }
+
+.client-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 2rem; }
+
+.comment-text {
+  border: 2px solid #dee2e6;
+  padding: 2.4rem;
+  margin-top: 3rem;
+  position: relative;
+  margin-bottom: 4.8rem; }
+
+.comment-text::after {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #343a40;
+  top: 0;
+  transform: translateY(-98%);
+  clip-path: polygon(50% 48%, 0 100%, 100% 100%); }
+
+.comment-text::before {
+  content: "";
+  position: absolute;
+  height: 29px;
+  width: 29px;
+  background-color: white;
+  border: 2px solid #dee2e6;
+  top: 0;
+  transform: translate(-2px, -101%);
+  clip-path: polygon(50% 48%, 0 100%, 100% 100%); }
+
+.carousel-indicator {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  left: 0;
+  bottom: .5rem; }
+
+.slider {
+  position: relative;
+  overflow: hidden; }
+
+.indicator {
+  width: 30px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 0 3px;
+  box-sizing: content-box;
+  opacity: .5;
+  border-top: 10px solid #111111;
+  border-bottom: 10px solid #111111;
+  cursor: pointer; }
+  .indicator.active {
+    opacity: 1; }
