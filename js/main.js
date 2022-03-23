@@ -47,8 +47,6 @@ function bmiCalc() {
 }
 
 const clientTestimonial = document.querySelectorAll(".client-comment");
-const width = clientTestimonial[1].offsetWidth;
-const pdl = window.getComputedStyle(clientTestimonial[1], null).getPropertyValue('padding-left');
 
 const indicators = document.querySelectorAll(".indicator");
 const sliderInner = document.querySelectorAll('.slider-inner')[0];
@@ -59,6 +57,9 @@ function slider(element) {
         indicator.classList.remove("active");
     }
     element.classList.add("active");
+    var width = element.offsetWidth;
     var lengthTransform = - (width * element.dataset.index);
     sliderInner.style.transform = `translateX(${lengthTransform}px)`;
 }
+
+console.log(width); 
