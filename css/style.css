@@ -476,7 +476,6 @@ input[type="email"]:focus {
   padding: 0 1.5rem;
   position: relative;
   width: 100%;
-  min-height: 45rem;
   margin: 6rem 0rem; }
   .container-bmi-calculator .bmi {
     max-width: 111.5rem;
