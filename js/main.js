@@ -58,7 +58,7 @@ function slider(element) {
     }
     element.classList.add("active");
     var width = element.offsetWidth;
-    var lengthTransform = - (width * element.dataset.index);
+    var lengthTransform = - (549 * element.dataset.index);
     sliderInner.style.transform = `translateX(${lengthTransform}px)`;
 }
 
